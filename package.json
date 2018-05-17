@@ -1,0 +1,36 @@
+{
+  "name": "smekdapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -wd",
+    "launch": "electron .",
+    "start": "concurrently \"webpack -wd\" \"electron .\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/MAinulYaqin/Smekdapp"
+  },
+  "author": "AinulBedjo",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^2.0.0",
+    "electron-packager": "^12.0.2",
+    "md5": "^2.2.1",
+    "mysql": "^2.15.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
