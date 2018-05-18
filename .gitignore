@@ -1,3 +1,9 @@
+# Nifty
+assets/js/demo
+assets/js/nifty.min.js
+assets/plugins
+assets/stylesheets/css
+
 # Logs
 logs
 *.log

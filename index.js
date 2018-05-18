@@ -1,12 +1,13 @@
 // @ts-check
+
 let {app, ipcMain, BrowserWindow, Menu} = require('electron')
-let path = require('path')
+let {join} = require('path')
 let url = require('url')
 let config = require('./config/config')
 
 function showWindow (a,b) {
     a = new BrowserWindow({width: 480,height: 560})
-    let d = path.join(__dirname, `${b}`)
+    let d = join(__dirname, `${b}`)
     a.loadURL(url.format({
         pathname: d,
         protocol: 'file',
