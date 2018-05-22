@@ -1,12 +1,14 @@
 import React from 'react'
 
-let Form = () => {
+const FORMID = 'form-login'
+
+let Form = ({submit}) => {
     return (
          <div className="cls-content" style={{marginTop: '2rem'}}>
                 <div className="cls-content-sm panel">
                     <div className="panel-body">
                         <p className="pad-btm">Sign In to your account</p>
-                        <form id="form-login">
+                        <form id={FORMID}>
                             <div className="form-group">
                                 <div className="input-group">
                                     <div className="input-group-addon">
@@ -26,7 +28,11 @@ let Form = () => {
                             <div className="row">
                                 <div className="col-xs-12">
                                     <div className="form-group text-right">
-                                        <button id="btn1" className="btn btn-success text-uppercase" type="submit">Login</button>
+                                        <button id="btn1" onClick={(e) => {
+                                            e.preventDefault()
+
+                                            submit(FORMID)
+                                        }} className="btn btn-success text-uppercase" type="submit">Login</button>
                                     </div>
                                 </div>
                             </div>
